@@ -1,4 +1,4 @@
-# Trend_analysis_project
+# :notes: Trend_analysis_project
 This repo contains code and graphs for my master thesis.
 
 In order to configure this project, please clone this repository to your local system:
