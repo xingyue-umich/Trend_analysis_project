@@ -2,10 +2,10 @@
 library("ggplot2")
 library("tidyr")
 library("ggpmisc")
-source("../code/functions.R")
+source("../Code/functions.R")
 
 # Import file
-BFRs_merged <- read_excel("./BFRs/BFRs_merged.xlsx", sheet = "BFRs_merged") %>% select(-1)
+BFRs_merged <- read_excel("../../Data/Chem_merged/BFRs_merged.xlsx", sheet = "BFRs_merged") %>% select(-1)
 
 ######################### first check #############################
 # check colnames and types
