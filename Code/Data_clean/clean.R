@@ -8,17 +8,15 @@ library(xlsx)
 library(XLConnect)
 library(rio)
 
-setwd("~/Documents/Research/Data")
-
 options(java.parameters = "-Xmx512M")
 options(java.parameters = c("-XX:+UseConcMarkSweepGC", "-Xmx8192m"))
 
 
 # Load Functions
-source("../Code/clean_A.R")
-source("../Code/clean_B.R")
-source("../Code/clean_C.R")
-source("../Code/clean_D.R")
+source("clean_A.R")
+source("clean_B.R")
+source("clean_C.R")
+source("clean_D.R")
 
 ################ PCB CLEAN ###################
 clean_B("PCBs_2006-2007")
