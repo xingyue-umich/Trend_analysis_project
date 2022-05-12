@@ -1,7 +1,7 @@
 library("ggplot2")
 library("tidyr")
 library("ggpmisc")
-source("../code/functions.R")
+source("../functions.R")
 
 
 # Import file
