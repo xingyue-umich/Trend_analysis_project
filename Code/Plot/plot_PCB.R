@@ -2,10 +2,10 @@ library("ggplot2")
 library("tidyr")
 library("ggpmisc")
 source("../code/functions.R")
-setwd("~/Documents/Research/Data")
+
 
 # Import file
-PCB_merged <- read_excel("PCB_merged.xlsx", sheet = "PCB_merged") %>% select(-1)
+PCB_merged <- read_excel("../../Data/Chem_merged/PCB_merged.xlsx", sheet = "PCB_merged") %>% select(-1)
 colnames(PCB_merged)
 
 # Create age group based on the mean age
