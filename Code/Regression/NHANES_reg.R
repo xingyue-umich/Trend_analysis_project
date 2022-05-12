@@ -6,7 +6,7 @@ source("../code/functions.R")
 setwd("~/Documents/Research/Data")
 
 # Import file
-NHANES <- read.csv(file = "./NHANES/NHANES - Mean PFAS Concentrations by Age, Gender, and Cycle Year.csv") %>% 
+NHANES <- read.csv(file = "../../Data/NHANES/NHANES - Mean PFAS Concentrations by Age, Gender, and Cycle Year.csv") %>% 
   select(-1)
 colnames(NHANES)[2] <- 'mean_age'
 
