@@ -3,7 +3,7 @@ library(latex2exp)
 library(ggplot2)
 
 # Import file
-reg_sum <- read_excel("../Data/Regression/reg_sum.xlsx", sheet = "reg_list") 
+reg_sum <- read_excel("../../Data/Regression/reg_sum.xlsx", sheet = "reg_list") 
 colnames(reg_sum)
 
 
