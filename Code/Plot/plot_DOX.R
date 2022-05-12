@@ -5,7 +5,7 @@ library("ggpmisc")
 source("../code/functions.R")
 
 # Import file
-DOX_merged <- read_excel("./DOX/DOX_merged.xlsx", sheet = "DOX_merged") %>% select(-1)
+DOX_merged <- read_excel("../../Data/Chem_merged/DOX/DOX_merged.xlsx", sheet = "DOX_merged") %>% select(-1)
 
 ######################### first check #############################
 # check colnames and types
