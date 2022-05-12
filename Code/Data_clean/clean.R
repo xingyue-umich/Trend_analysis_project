@@ -26,7 +26,7 @@ clean_A("PCBs_2010-2011")
 clean_B("PCBs_2012-2013")
 # clean_C("PCBscheck_2012-2013")
 
-data_list_PCB <- import_list("QAEHS Updated Chemical Biomarker Datasets_back.xlsx", which = c(1,2,3,4),
+data_list_PCB <- import_list("../../Data/QAEHS Updated Chemical Biomarker Datasets_back.xlsx", which = c(1,2,3,4),
                              setclass = "tbl",rbind = TRUE) %>% select(-1)
 data_list_PCB <- select(data_list_PCB , -1) # Drop the first column i.e. id
 
@@ -43,7 +43,7 @@ clean_B("BFRs_2010-2011")
 clean_B("BFRs_2012-2013")
 
 # Merge all sheets
-data_list_BFRs <- import_list("QAEHS Updated Chemical Biomarker Datasets_back.xlsx", which = c(5,6,7,8,9),
+data_list_BFRs <- import_list("../../Data/QAEHS Updated Chemical Biomarker Datasets_back.xlsx", which = c(5,6,7,8,9),
                               setclass = "tbl",rbind = TRUE) %>% select(-1)
 
 write.xlsx(data_list_BFRs
@@ -56,7 +56,7 @@ clean_A("DOX_2004-2005")
 clean_A("DOX_2002-2008")
 clean_A("DOX_2010-2013")
 
-data_list_DOX <- import_list("QAEHS Updated Chemical Biomarker Datasets_back.xlsx", which = c(10,11,12,13),
+data_list_DOX <- import_list("../../Data/QAEHS Updated Chemical Biomarker Datasets_back.xlsx", which = c(10,11,12,13),
                              setclass = "tbl", rbind = TRUE) %>% select(-1)
 
 data_list_DOX <- select(data_list_DOX, -1)
@@ -71,7 +71,7 @@ clean_B("OCPs_2006-2007")
 clean_A("OCPs_2010-2011")
 clean_B("OCPs_2012-2013")
 
-data_list_OCPs <- import_list("QAEHS Updated Chemical Biomarker Datasets_back.xlsx", which = c(14,15,16,17),
+data_list_OCPs <- import_list("../../Data/QAEHS Updated Chemical Biomarker Datasets_back.xlsx", which = c(14,15,16,17),
                              setclass = "tbl", rbind = TRUE) %>% select(-1)
 data_list_OCPs <- select(data_list_OCPs, -1)
 write.xlsx(data_list_OCPs
@@ -86,7 +86,7 @@ clean_B("PFAS_2010-2011")
 clean_B("PFAS_2012-2013")
 clean_D("PFAS_2015&2017")
 
-data_list_PFASs <- import_list("QAEHS Updated Chemical Biomarker Datasets_back.xlsx", which = c(18,19,20,21,22),
+data_list_PFASs <- import_list("../../Data/QAEHS Updated Chemical Biomarker Datasets_back.xlsx", which = c(18,19,20,21,22),
                               setclass = "tbl", rbind = TRUE) %>% select(-1)
 
 
