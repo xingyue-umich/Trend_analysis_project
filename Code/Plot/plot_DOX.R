@@ -2,7 +2,7 @@
 library("ggplot2")
 library("tidyr")
 library("ggpmisc")
-source("../Code/functions.R")
+source("../functions.R")
 
 # Import file
 DOX_merged <- read_excel("../../Data/Chem_merged/DOX_merged.xlsx", sheet = "DOX_merged") %>% select(-1)
