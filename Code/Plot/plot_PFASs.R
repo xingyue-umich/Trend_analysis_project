@@ -1,4 +1,3 @@
-setwd("~/Documents/Research/Data")
 library("ggplot2")
 library('plotly')
 library("tidyr")
@@ -8,11 +7,11 @@ library("plyr")
 library("readxl")
 library("xlsx")
 library('stringr')
-source("../code/functions.R")
+source("../Code/functions.R")
 
 
 # Import file
-PFASs_merged <- read_excel("./PFAS/PFASs_merged.xlsx", sheet = "PFASs_merged") %>% select(-1)
+PFASs_merged <- read_excel("../../Data/Chem_merged/PFASs_merged.xlsx", sheet = "PFASs_merged") %>% select(-1)
 
 ######################### first check #############################
 # check colnames and types
