@@ -1,6 +1,6 @@
 clean_A <- function(file_name_of_datasets)
 {
-  dataset <- read_excel("Chemical concentration database QAEHS7d.xlsx"
+  dataset <- read_excel("../../Data/Chemical concentration database QAEHS7d.xlsx"
                                        , sheet = file_name_of_datasets) %>%
                           subset(!is.na(globally_unique_sample_id)) 
   colnames(dataset)
