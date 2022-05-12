@@ -1,6 +1,6 @@
 clean_C <- function(file_name_of_datasets)
 {
-  dataset <- readxl::read_excel("Chemical concentration database QAEHS7d.xlsx"
+  dataset <- readxl::read_excel("../../Data/Chemical concentration database QAEHS7d.xlsx"
                                        , sheet = file_name_of_datasets)
   colnames(dataset)
   num_rows <- nrow(dataset)
@@ -65,7 +65,7 @@ clean_C <- function(file_name_of_datasets)
   
   
   write.xlsx(new_dataset
-             , file = "QAEHS Updated Chemical Biomarker Datasets_back.xlsx"
+             , file = "QAEHS Updated Chemical Biomarker Datasets.xlsx"
              , sheetName = file_name_of_datasets
              , append = TRUE)
   
