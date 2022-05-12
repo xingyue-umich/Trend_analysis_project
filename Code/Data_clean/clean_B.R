@@ -1,6 +1,6 @@
 clean_B <- function(file_name_of_datasets)
 {
-  dataset <- read_excel("Chemical concentration database QAEHS7d.xlsx"
+  dataset <- read_excel("../../Data/Chemical concentration database QAEHS7d.xlsx"
                                        , sheet = file_name_of_datasets) %>%
     subset(!is.na(globally_unique_sample_id)) 
   
@@ -81,7 +81,7 @@ clean_B <- function(file_name_of_datasets)
     spread(chem, value)
 
     write.xlsx(new_dataset
-             , file = "QAEHS Updated Chemical Biomarker Datasets_back2.xlsx"
+             , file = "QAEHS Updated Chemical Biomarker Datasets.xlsx"
              , sheetName = file_name_of_datasets
              , append = TRUE)
 }
