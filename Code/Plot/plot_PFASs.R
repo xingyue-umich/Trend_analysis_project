@@ -7,7 +7,7 @@ library("plyr")
 library("readxl")
 library("xlsx")
 library('stringr')
-source("../Code/functions.R")
+source("../functions.R")
 
 
 # Import file
