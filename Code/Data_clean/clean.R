@@ -31,7 +31,7 @@ data_list_PCB <- import_list("QAEHS Updated Chemical Biomarker Datasets_back.xls
 data_list_PCB <- select(data_list_PCB , -1) # Drop the first column i.e. id
 
 write.xlsx(data_list_PCB
-           , file = "PCB_merged_back.xlsx"
+           , file = "PCB_merged.xlsx"
            , sheetName = "PCB_merged")
 
 ################ BFR CLEAN ###################
